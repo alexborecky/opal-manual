@@ -1,0 +1,76 @@
+.hero {
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+}
+
+.flex-row-hero {
+    display: flex;
+    width: 100%;
+    min-height: 100vh;
+}
+
+.full-width {
+    width: 100%;
+}
+
+.container {
+    width: 800px;
+    padding-bottom: 80px;
+    @media only screen and (max-width: 1400px){
+        width: 640px;
+    }
+}
+
+.col1 {
+    width: 25%;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.col2 {
+    width: 50%;
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+}
+
+.flex {
+    display: flex;
+}
+
+.center {
+    justify-content: center;
+    align-items: center;
+}
+
+.center-left {
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.column {
+    flex-flow: column;
+}
+
+.bottom-end {
+    align-items: flex-end;
+}
+
+.half {
+    width: 50%;
+}
+
+pre {
+    margin: 24px 0;
+    background-color: #1D1E22;
+}
+
+.additional-image {
+    margin: 40px 0;
+    background-image: url(https://alexborecky.com/images/productDetail.png);
+    background-position: center;
+    background-size: cover;
+    height: 440px !important;
+  }

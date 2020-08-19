@@ -1,0 +1,92 @@
+* {
+    font-family: Poppins;
+}
+
+h1, h2, h3, h4, h5, p, a, caption {
+    margin: 0;
+}
+
+
+h1 {
+    font-size: 80px;
+}
+
+h2 {
+    font-size: 48px;
+}
+
+h3 {
+    font-size: 32px;
+}
+
+h4 {
+    font-size: 24px;
+}
+
+h5 {
+    font-size: 16px;
+    font-weight: 600;
+}
+
+p {
+    font-size: 15px;
+    max-width: 650px;
+}
+
+a {
+    font-size: 15px;
+    text-decoration: none;
+    color: black;
+    font-weight: 500;
+    &:hover {
+        font-weight: 600;
+        color: $blue-color;
+    }
+}
+
+code {
+    color: #f07178;
+    font-family: 'Fira Code';
+    font-size: 14px;
+}
+
+.blue-text {
+    color: #89ddff;
+    font-family: 'Fira Code';;
+}
+.yellow-text {
+    color: #a7925a;
+    font-family: 'Fira Code';;
+}
+.green-text {
+    color: #96b38a;
+    font-family: 'Fira Code';;
+}
+.white-text {
+    color: white;
+    font-family: 'Fira Code';;
+}
+.purple-text {
+    color: #c792ea;
+    font-family: 'Fira Code';;
+}
+.red-text {
+    font-family: 'Fira Code';
+    color: #f07178;
+}
+
+.orange-text {
+    color: #ddca7e;
+    font-family: 'Fira Code';
+}
+
+.lowered-code {
+    font-family: 'Fira Code';
+    color: rgba($color: white, $alpha: .4);
+}
+
+label {
+    font-size: 12px;
+    font-weight: 500;
+    padding: 8px 0;
+}
