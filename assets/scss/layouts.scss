@@ -36,6 +36,12 @@
     align-items: center;
 }
 
+.snack-col {
+    width: 80px;
+    display: flex;
+    justify-content: center;
+}
+
 .flex {
     display: flex;
 }
@@ -74,3 +80,11 @@ pre {
     background-size: cover;
     height: 440px !important;
   }
+
+  .underline {
+    height: 6px;
+    width: 120px;
+    opacity: .8;
+    background-color: $blue-color;
+    border-radius: 100px;
+}

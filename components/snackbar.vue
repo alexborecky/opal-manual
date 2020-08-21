@@ -1,8 +1,13 @@
 <template>
-    <div class="snackbar full-width">
+    <div class="snackbar flex full-width">
         <div class="snackbar-content flex">
-            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" class="feather feather-alert-circle"><circle cx="12" cy="12" r="10"></circle><line x1="12" y1="8" x2="12" y2="12"></line><line x1="12" y1="16" x2="12.01" y2="16"></line></svg>
-            <h5>{{snackBarText}}</h5>
+            <div class="flex snack-col">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" class="feather feather-alert-circle"><circle cx="12" cy="12" r="10"></circle><line x1="12" y1="8" x2="12" y2="12"></line><line x1="12" y1="16" x2="12.01" y2="16"></line></svg>
+            </div>
+            <div class="clo2 flex column">
+                <h5>{{snackBarText}}</h5>
+                <nuxt-link :to="snackUrl">{{snackBarLink}}</nuxt-link> 
+            </div>
         </div>
     </div>
 </template>
@@ -11,7 +16,7 @@
 <script>
 export default {
     name: 'snackbar',
-    props: ['snackBarText']
+    props: ['snackBarText', 'snackBarLink', 'snackUrl']
 }
 </script>
 
@@ -23,19 +28,18 @@ export default {
     border-left: solid 3px $blue-color;
     background-color: rgba($color: $blue-color, $alpha: .2);
     .snackbar-content {
-        margin-left: 24px;
         padding: 24px 0;
-        img {
-            height: 24px;
-            width: 24px;
-            margin: 0;
-        }
         h5 {
-            margin-left: 16px;
             color: $blue-color;
+            max-width: 650px;
         }
         svg {
             stroke: $blue-color;
+        }
+        a {
+            color: $blue-color;
+            text-decoration: underline;
+            margin-top: 24px;
         }
     }
 }
@@ -63,6 +67,28 @@ export default {
         svg {
             stroke: $alert-red;
         }
+    }
+}
+
+.success {
+    border-left: solid 3px $success-green;
+    background-color: rgba($color: $success-green, $alpha: .2);
+    .snackbar-content {
+        h5 {
+            color: $success-green;
+        }
+        svg {
+            stroke: $success-green;
+        }
+        a {
+            color: $success-green;
+        }
+    }
+}
+
+.no-link {
+    a {
+        display: none;
     }
 }
     

@@ -30,13 +30,6 @@ export default {
     }
     h3 {
         margin: 0 0 40px 0;
-        .underline {
-            height: 6px;
-            width: 120px;
-            opacity: .8;
-            background-color: black;
-            border-radius: 100px;
-        }
     }
 }
 

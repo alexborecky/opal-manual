@@ -13,7 +13,17 @@
       </aside>
     <div class="col2">
       <div class="container home-page">
-        <intro/>
+        <intro
+          :templateTitle="page.templateTitle"
+          :introDescription="page.introDescription"
+          :introSubtitle="page.introSubtitle"
+          :introSubtextOne="page.introSubtextOne"
+          :introSubtextTwo="page.introSubtextTwo"
+
+          introSnackLink=""
+          :introSnackBar="page.snackBarWarning"
+          introSnackUrl=""
+        />
         <nuxt-content :document="page"></nuxt-content>
         <footerNavigation 
           :previousArticle="page.introChapter"

@@ -33,7 +33,7 @@
             <iframe 
               width="100%" 
               height="100%" 
-              src="https://www.youtube.com/embed/d-LtMpDw9B0" 
+              src="https://www.youtube.com/embed/lpJ5sCBD7DQ" 
               frameborder="0" 
               allow="accelerometer; 
               autoplay; 
@@ -153,11 +153,16 @@
 
               </step>
             </div>
-          </additionalContent>
+        </additionalContent>
+          <snackBar class="success"
+            :snackBarText="generatorTip"
+            snackBarLink="Přejít na generátor"
+            snackUrl="/generator"
+          />
             <footerNavigation 
             :previousArticle="page.chapterOne"
-            :nextArticle="page.chapterThree"
-            nextUrl="/banners"
+            :nextArticle="page.chapterSix"
+            nextUrl="/generator"
             previousUrl="/images"
             />
       </div>
@@ -172,13 +177,14 @@ export default {
     const page = await $content('home').fetch();
     return {page}
   },
-  name: 'banners',
+  name: 'app',
   components: {
   },
   data () {
     return {
       name1: 'sectionTitle',
-      chapterFour: 'sectionTitle'
+      chapterFour: 'sectionTitle',
+      generatorTip: 'TIP! Vyzkoušejte náš generátor kódu pro bannery! Stačí vyplnit obsahová pole a kód máte pžipravený pro použiti.'
     }
   }
 }

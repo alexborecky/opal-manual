@@ -10,6 +10,10 @@ import snackBar from '@/components/snackBar.vue'
 import additionalContent from '@/components/additionalContent.vue'
 import footerNavigation from '@/components/footerNavigation.vue'
 import codeGenerator from '@/components/codeGenerator.vue'
+import tabs from '@/components/tabs.vue'
+import footerMessage from '@/components/footerMessage.vue'
+
+
 
 
 Vue.component('intro', intro)
@@ -22,3 +26,5 @@ Vue.component('additionalContent', additionalContent)
 Vue.component('footerNavigation', footerNavigation)
 Vue.component('codeGenerator', codeGenerator)
 Vue.component('textTutorial', textTutorial)
+Vue.component('tabs', tabs)
+Vue.component('footerMessage', footerMessage)

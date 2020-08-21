@@ -71,18 +71,6 @@ export default {
         p {
         margin: 32px 0 0 0;
     }
-    .underline {
-        height: 6px;
-        width: 120px;
-        opacity: .8;
-        background-color: black;
-        border-radius: 100px;
-    }
-    h4 {
-        .underline {
-            width: 80px;
-        }
-    }
 }
     
 </style>

@@ -27,7 +27,6 @@
             <codeGenerator
             :codeTitle="page.topBanner"
             :codeDescription="page.topBannerDescription"
-            bannerType="Kód pro vrchní banner"
             bannerClass="custom-banner"
             heading="h3"
         />
@@ -36,7 +35,6 @@
           <codeGenerator id="middleBanner" 
               :codeTitle="page.middleBanner"
               :codeDescription="page.middleBannerDescription"
-              bannerType="Kód pro střední banner"
               bannerClass="hp-middle-banner"
               heading="h2"
           />
@@ -45,14 +43,16 @@
           <codeGenerator id="bottomBanner"
               :codeTitle="page.bottomBanner"
               :codeDescription="page.bottomBannerDescription"
-              bannerType="Kód pro spodní banner"
               bannerClass="hp-bottom-banner"
               heading="h2"
           />
         </div>
         </tabs>
-        <footerNavigation 
-          :previousArticle="page.chapterTwo"
+        <footerMessage
+          snackBarMessage="Success"
+        />
+       <footerNavigation 
+          :previousArticle="page.chapterThree"
           :nextArticle="page.introChapter"
           nextUrl="/"
           previousUrl="/banners"
@@ -70,12 +70,22 @@ export default {
     return {page}
   },
     name: 'app',
-    data () {
+    data:function () {
         return {
           isActive: true,
-          middleActive: false
+          middleActive: false,
+          message: 'Hello there',
+          Success: 'hi'
         }
+    },
+    methods: {
+    onCopy: function (e) {
+      alert('You just copied: ' + e.text)
+    },
+    onError: function (e) {
+      alert('Failed to copy texts')
     }
+  }
 }
 </script>
 

@@ -12,9 +12,9 @@
         />
       </aside>
     <div class="col2">
+      <nuxt-content :document="page"></nuxt-content>
       <div class="container">
         <!-- VELIKOSTI OBRÁZKŮ -->
-        <nuxt-content :document="page"></nuxt-content>
         <imageTutorial id="images"
           :sectionTitle="page.chapterOne"
           :sectionDescription="page.chapterOneDescription"
@@ -22,8 +22,10 @@
           <div slot="additionalContent">
             <p>{{page.chapterOneAdditionOne}}</p>
             <div class="additional-image"></div>
-            <snackBar
+            <snackBar class="no-link warning"
               :snackBarText="page.imageSizeText"
+              snackBarLink=""
+              snackUrl=""
             />
           </div>
         </imageTutorial>

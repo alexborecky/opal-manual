@@ -1,18 +1,20 @@
 <template>
     <div class="intro flex column">
         <div class="introduction-content">
-            <h1>OPAL</h1>
-            <p>Předem bychom vám rádi poděkovali za důvěru vloženou v šablonu OPAL. V tomto dokumentu vás provedeme nastavením, které zaručí nejlepší vzhled vaší šablony!</p>
+            <h1>{{templateTitle}}</h1>
+            <p>{{introDescription}}</p>
         </div>
         <div class="image flex center bottom-end"></div>
         <div class="overview">
             <article>
-                <h3>Příprava šablony</h3>
-                <p>Na této stránce naleznete veškeré informace, které vám pomohou snadněji nastavit vaší šablonu tak, aby vše fungovalo jak má a aby byl finální vzhled perfektní!</p>
-                <p>Postupně vás v kapitolách z obshu provedeme nastavením tak, aby byla práce pro vás co nejsnažší.</p>
+                <h3>{{introSubtitle}}</h3>
+                <p>{{introSubtextOne}}</p>
+                <p>{{introSubtextTwo}}</p>
             </article>
-            <snackBar class="warning"
-                :snackBarText="text"
+            <snackBar class="warning no-link"
+                :snackBarText="introSnackBar"
+                :snackUrl="introSnackUrl"
+                :snacBarLink="introSnackLink"
             />
         </div>
     </div>
@@ -27,7 +29,17 @@ export default {
         return {
             text: 'Hello'
         }
-    }
+    },
+    props: [
+        'introSnackBar', 
+        'introSnackUrl', 
+        'introSnackLink',
+        'templateTitle',
+        'introDescription',
+        'introSubtitle',
+        'introSubtextOne',
+        'introSubtextTwo'
+        ]
 }
 </script>
 
@@ -36,6 +48,9 @@ export default {
 .intro {
     width: 100%;
     margin-top: 80px;
+    h1 {
+        margin-bottom: 24px;
+    }
 }
 
 .introduction-content {

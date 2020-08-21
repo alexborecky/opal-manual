@@ -36,7 +36,8 @@ export default {
   ** Plugins to load before mounting the App
   */
   plugins: [
-    '~/plugins/uiKit.js'
+    '~/plugins/uiKit.js',
+    {src: '~/plugins/clipboard.js', ssr: false}
   ],
   /*
   ** Nuxt.js dev-modules
@@ -54,6 +55,10 @@ export default {
 
   styleResources: {
     scss: ['./assets/scss/*.scss']
+  },
+
+  router: {
+    // base: '/develop/'
   },
   /*
   ** Build configuration

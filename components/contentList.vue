@@ -12,10 +12,11 @@
                             <li><a href="#stepthree">Krok 3: Změna nadpisu a popisku banneru</a></li>
                             <li><a href="#stepfour">Krok 4: Změna odkazu a textu tlačítka</a></li>
                     </div> -->
-                <li><a href="">{{contentThree}}</a></li>
-                <li><a href="">{{contentFour}}</a></li>
-                <li><a href="">{{contentFive}}</a></li> <br> <br>
-                <li><a href="/generator">{{contentSix}}<span> (beta)</span></a></li>
+                <!-- <li><nuxt-link to="">{{contentThree}}</nuxt-link></li>
+                <li><nuxt-link to="">{{contentFour}}</nuxt-link></li>
+                <li><nuxt-link to="">{{contentFive}}</nuxt-link></li> -->
+                <br> <br> 
+                <li><nuxt-link to="/generator">{{contentSix}}<span> (beta)</span></nuxt-link></li>
             </ul>
         </div>
     </div>

@@ -31,7 +31,7 @@
             </div>
         </div>
         <div class="output">
-            <label for="">Kód pro Top Banner:</label>
+            <label for="">{{bannerType}}</label>
             <pre>
                 <code class="lowered-code">
                     <div class="wrapper lowered-code">
@@ -51,6 +51,10 @@
                         &lt;/div>
                     </div>
                 </code>
+                <!-- <button type="button"
+                    v-clipboard:copy="message"> 
+                    Copy!
+                </button> -->
             </pre>
         </div>
     </div>
@@ -67,15 +71,17 @@ export default {
             title: 'Nahradíme nadpisem',
             description: 'Nahradíme popiskem',
             buttonUrl: '#',
-            buttonText: 'Kliknutí na odkaz'
+            buttonText: 'Kliknutí na odkaz',
+            message: 'Hello there'
         }
     },
     props: [
         'codeTitle',
         'codeDescription',
         'bannerClass',
-        'heading'
-    ]
+        'heading',
+        'bannerType'
+    ],
 }
 </script>
 
@@ -119,6 +125,10 @@ pre {
         .wrapper {
             margin-left: 24px;
         }
+    }
+    button {
+        margin: 24px;
+        float: right;
     }
 }
 
