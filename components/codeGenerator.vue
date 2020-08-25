@@ -39,7 +39,7 @@
                         <div class="wrapper lowered-code">
                         &lt;img src="<span class="white-text">{{url}}</span>"> <br>
                             <div class="wrapper lowered-code">
-                                &lt;div class="banner-caption"> <br>
+                                &lt;div class="{{bannerClassTwo}}"> <br>
                                 <div class="wrapper lowered-code">
                                     &lt;{{heading}}><span class="white-text">{{title}}</span>&lt;/{{heading}}> <br>
                                     &lt;p><span class="white-text">{{description}}</span>&lt;/p> <br>
@@ -72,7 +72,7 @@ export default {
             description: 'Nahradíme popiskem',
             buttonUrl: '#',
             buttonText: 'Kliknutí na odkaz',
-            message: 'Hello there'
+            message: 'Hello there',
         }
     },
     props: [
@@ -80,7 +80,8 @@ export default {
         'codeDescription',
         'bannerClass',
         'heading',
-        'bannerType'
+        'bannerType',
+        'bannerClassTwo'
     ],
 }
 </script>

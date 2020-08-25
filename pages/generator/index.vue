@@ -22,6 +22,7 @@
           :tabOneTitle="page.topBanner"
           :tabTwoTitle="page.middleBanner"
           :tabThreeTitle="page.bottomBanner"
+          :tabFourTitle="page.carousel"
         >
         <div slot="tabOne">
             <codeGenerator
@@ -30,6 +31,7 @@
             bannerType="Kód pro vrchní banner"
             bannerClass="custom-banner"
             heading="h3"
+            bannerClassTwo="banner-caption"
         />
         </div>
         <div slot="tabTwo">
@@ -39,6 +41,7 @@
               bannerType="Kód pro střední banner"
               bannerClass="hp-middle-banner"
               heading="h2"
+              bannerClassTwo="banner-caption"
           />
         </div>
         <div slot="tabThree">
@@ -48,14 +51,25 @@
               bannerType="Kód pro spodní banner"
               bannerClass="hp-bottom-banner"
               heading="h2"
+              bannerClassTwo="banner-caption"
+          />
+        </div>
+        <div slot="tabFour">
+          <codeGenerator id="bottomBanner"
+              :codeTitle="page.carousel"
+              :codeDescription="page.carouselDescription"
+              bannerType="Kód pro Carousel"
+              bannerClass="carousel-slide-box"
+              heading="h2"
+              bannerClassTwo="carousel-slide-caption"
           />
         </div>
         </tabs>
         <footerNavigation 
-          :previousArticle="page.chapterTwo"
+          :previousArticle="page.chapterThree"
           :nextArticle="page.introChapter"
           nextUrl="/"
-          previousUrl="/banners"
+          previousUrl="/carousel"
         />
       </div>
     </div>

@@ -161,8 +161,8 @@
           />
             <footerNavigation 
             :previousArticle="page.chapterOne"
-            :nextArticle="page.chapterSix"
-            nextUrl="/generator"
+            :nextArticle="page.chapterThree"
+            nextUrl="/carousel"
             previousUrl="/images"
             />
       </div>

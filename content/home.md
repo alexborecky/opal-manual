@@ -54,12 +54,17 @@ refreshText: 'Abys se změny projevily, je třeba ukládat v administraci a obno
 
 # CHAPTER THREE
 
+chapterThreeDescription: 'Hlavním bannerem rozumíme ten, který se zobrazuje jako první při příchodu na náš e-shop a ten, který má největší rozměry.'
+
+stepOneCarousel: 'Krok 1: Administrace Shoptetu'
+stepOneTextCarousel: 'V první řadě budeme chtít přidat kód do patřičného místa v naší Shoptet administraci. Toto místo najdeme přes hlavní nabídku administrace v kategorii VZHLED A OBSAH > Bannery > Carousel > Přidat carousel (pokud není přidaný)'
+carouselWarning: 'Je důležité odškrtnout viditelnost všech carouselů, které jsou v nabídce.'
 
 
-# CHAPTER THREE
+# CHAPTER FOUR
 
 
-# CHAPTER THREE
+# CHAPTER FIVE
 
 
 # CHAPTER SIX 
@@ -68,8 +73,11 @@ refreshText: 'Abys se změny projevily, je třeba ukládat v administraci a obno
 
 chapterSixDescription: 'Pro vaše pohodlí a klid jsme pro vás postavili jednoduchý generátor kódu pro bannery na našich šablonách. Nyní testujeme verze jeho zobrazení, avšak základ je funkční a kód z něj stejně tak. Neváhejte si vygenerovat svůj banner čistým kódem! 👌'
 
-topBanner: 'Vrchní (Top) banner 👆'
-topBannerDescription: 'Generátor níže vám umožní nastavit si obsah banneru, který se nachází ve středové pozici hlavní stránky. Finální kód zkopírujte z černého boxu níže.'
+carousel: 'Carousel 🌄'
+carouselDescription: 'Generátor níže vám umožní nastavit si obsah hlavního Carouselu ve vrchní části hlavní stránky. Finální kód zkopírujte z černého boxu níže.'
+
+topBanner: 'Top banner 👆'
+topBannerDescription: 'Generátor níže vám umožní nastavit si obsah banneru, který se nachází ve vrchní pozici hlavní stránky pod hlavním Carouselem. Finální kód zkopírujte z černého boxu níže.'
 
 middleBanner: 'Středový banner 👈'
 middleBannerDescription: 'Generátor níže vám umožní nastavit si obsah banneru, který se nachází ve středové pozici hlavní stránky. Finální kód zkopírujte z černého boxu níže.'

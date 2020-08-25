@@ -19,6 +19,12 @@
                 @click="selectTab(3)">
                 <p>{{tabThreeTitle}}</p>
             </div>
+            <div 
+                :class="{'active': currentTab == 4}" 
+                class="tab flex " 
+                @click="selectTab(4)">
+                <p>{{tabFourTitle}}</p>
+            </div>
         </div>
 
         <div class="tab-content">
@@ -32,6 +38,10 @@
 
             <div v-if="currentTab == 3" class="text">
                 <slot name="tabThree"></slot>
+            </div>
+
+            <div v-if="currentTab == 4" class="text">
+                <slot name="tabFour"></slot>
             </div>
         </div>
     </div>
@@ -55,7 +65,8 @@ export default {
     props: [
         'tabOneTitle',
         'tabTwoTitle',
-        'tabThreeTitle'
+        'tabThreeTitle',
+        'tabFourTitle'
     ]
 }
 </script>
@@ -77,7 +88,7 @@ export default {
     }
     .tab {
         border-radius: 5px;
-        width: calc(100%/3);
+        width: calc(100%/4);
         margin: 0 16px 0 0;
         p {
             padding: 16px;
