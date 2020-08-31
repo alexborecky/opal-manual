@@ -18,7 +18,7 @@
         <imageTutorial id="images"
           :sectionTitle="page.chapterOne"
           :sectionDescription="page.chapterOneDescription"
-          tutorialImage="https://alexborecky.com/images/imageSize.png">
+          tutorialImage="https://alexborecky.com/images/shoptet/imageSize.png">
           <div slot="additionalContent">
             <p>{{page.chapterOneAdditionOne}}</p>
             <div class="additional-image"></div>
@@ -78,6 +78,7 @@ export default {
 
 .additional-image {
   margin: 24px 0 0 0 ;
+  display: none;
 }
 
 #banners {  

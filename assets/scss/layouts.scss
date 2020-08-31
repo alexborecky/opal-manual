@@ -71,6 +71,16 @@
 pre {
     margin: 24px 0;
     background-color: #1D1E22;
+    white-space: nowrap;
+    overflow: auto;
+    margin: 0;
+    border-radius: 10px;
+    code {
+        margin: 24px !important;
+        .wrapper {
+            margin-left: 24px;
+        }
+    }
 }
 
 .additional-image {
@@ -87,4 +97,10 @@ pre {
     opacity: .8;
     background-color: $blue-color;
     border-radius: 100px;
+}
+
+.snippet {
+    background-color: rgba($color: lightgray, $alpha: .2);
+    border-radius: 10px;
+    border: 2px lightgray solid;
 }

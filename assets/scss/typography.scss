@@ -44,10 +44,17 @@ a {
     }
 }
 
+
 code {
     color: #f07178;
     font-family: 'Fira Code';
     font-size: 14px;
+    div {
+        font-family: 'Fira Code';
+        strong {
+            font-family: 'Fira Code';
+        }
+    }
 }
 
 .blue-text {

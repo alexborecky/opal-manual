@@ -7,7 +7,7 @@
                 <li><nuxt-link to="/images">{{contentOne}}</nuxt-link></li>
                 <li><nuxt-link to="/banners">{{contentTwo}}</nuxt-link></li>
                 <li><nuxt-link to="/carousel">{{contentThree}}</nuxt-link></li>
-                <!-- <li><nuxt-link to="">{{contentFour}}</nuxt-link></li> -->
+                <li><nuxt-link to="/social-media">{{contentFour}}</nuxt-link></li>
                 <!-- <li><nuxt-link to="">{{contentFive}}</nuxt-link></li> -->
                 <br> <br> 
                 <li><nuxt-link to="/generator">{{contentSix}}<span> (beta)</span></nuxt-link></li>

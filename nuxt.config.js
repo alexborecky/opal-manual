@@ -58,7 +58,7 @@ export default {
   },
 
   router: {
-    base: '/develop/'
+    // base: '/manualy/opal/'
   },
   /*
   ** Build configuration

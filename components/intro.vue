@@ -75,7 +75,7 @@ export default {
 
 .image {
     margin: 40px 0;
-    background-image: url(https://alexborecky.com/images/opal.jpg);
+    background-image: url(https://alexborecky.com/images/shoptet/opal.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;

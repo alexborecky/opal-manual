@@ -26,10 +26,9 @@ export default {
 .step {
     margin: 40px 0 0 0;
     p {
-        margin: 32px 0 0 0;
+        margin: 32px 0;
     }
     img {
-        margin: 32px 0 0 0;
         width: 100%;
     }
 }

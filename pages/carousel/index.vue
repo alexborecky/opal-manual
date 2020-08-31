@@ -46,7 +46,7 @@
                     :stepTitle="page.stepOneCarousel"
                     :stepText="page.stepOneTextCarousel"
                     :stepTextTwo="page.stepOneTextTwoCarousel"
-                    stepImage="https://alexborecky.com/images/carousel-main.png">
+                    stepImage="https://alexborecky.com/images/shoptet/carousel-main.png">
 
                     <div slot="stepContent">
                       <snackBar class="no-link warning"
@@ -64,7 +64,7 @@
                   :stepTitle="page.stepTwo"
                   :stepText="page.stepTwoText"
                   :stepTextTwo="page.stepTwoTextTwo"
-                  stepImage="https://alexborecky.com/images/carousel-image.png">
+                  stepImage="https://alexborecky.com/images/shoptet/carousel-image.png">
 
                   <!-- ADDITIONAL STEP TWO CONTENT -->
                   <div slot="stepContent">
@@ -102,7 +102,7 @@
                   :stepTitle="page.stepThree"
                   :stepText="page.stepThreeText"
                   :stepTextThree="page.stepThreeTextTwo"
-                  stepImage="https://alexborecky.com/images/carousel-text.png">
+                  stepImage="https://alexborecky.com/images/shoptet/carousel-text.png">
 
                   <div slot="stepContent">
                     <p> Nahrazení textu je snažší, neboť se můžeme orientovat podle již zkopírovaného textu, konkrétně 
@@ -125,7 +125,7 @@
                 :stepTitle="page.stepFour"
                   :stepText="page.stepFourText"
                   :stepTextFour="page.stepFourTextTwo"
-                  stepImage="https://alexborecky.com/images/carousel-text.png">
+                  stepImage="https://alexborecky.com/images/shoptet/carousel-text.png">
 
                   <div slot="stepContent">
                     <p> Podíváme se na zoubek obsahu mezi uvozovkami 
@@ -166,8 +166,8 @@
           />
             <footerNavigation 
             :previousArticle="page.chapterTwo"
-            :nextArticle="page.chapterSix"
-            nextUrl="/generator"
+            :nextArticle="page.chapterFour"
+            nextUrl="/social-media"
             previousUrl="/banners"
             />
       </div>
