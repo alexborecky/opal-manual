@@ -37,14 +37,14 @@
                     <div class="wrapper lowered-code">
                         &lt;div  class="{{bannerClass}}"> <br>
                         <div class="wrapper lowered-code">
-                        &lt;img src="<span class="white-text">{{url}}</span>"> <br>
+                        &lt;img src="<span class="white">{{url}}</span>"> <br>
                             <div class="wrapper lowered-code">
                                 &lt;div class="{{bannerClassTwo}}"> <br>
                                 <div class="wrapper lowered-code">
-                                    &lt;{{heading}}><span class="white-text">{{title}}</span>&lt;/{{heading}}> <br>
-                                    &lt;p><span class="white-text">{{description}}</span>&lt;/p> <br>
+                                    &lt;{{heading}}><span class="white">{{title}}</span>&lt;/{{heading}}> <br>
+                                    &lt;p><span class="white">{{description}}</span>&lt;/p> <br>
                                 </div>
-                                &lt;a href="<span class="white-text">{{buttonUrl}}</span>" class="button"><span class="white-text">{{buttonText}}</span>&lt;/a> <br>
+                                &lt;a href="<span class="white">{{buttonUrl}}</span>" class="button"><span class="white">{{buttonText}}</span>&lt;/a> <br>
                             </div>
                         &lt;/div> <br>
                         </div>

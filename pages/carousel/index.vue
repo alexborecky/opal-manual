@@ -19,11 +19,22 @@
           :sectionTitle="page.chapterThree"
           :sectionDescription="page.chapterThreeDescription">
           <div slot="codepen">
-            <iframe 
+            <p>Než začneme s konkrétními kroky, podívejme se na kód, který budeme do administrace zadávat.</p>
+            <codeSnippet
+              :bannerClass="codes.carouselClass"
+              :imageUrl="codes.carouselImage"
+              :bannerClassTwo="codes.carouselSecondClass"
+              :heading="codes.carouselTypo"
+              :title="codes.carouselTitle"
+              :description="codes.carouselDescription"
+              :buttonUrl="codes.carouselButton"
+              :buttonText="codes.carouselButtonText"
+            />
+            <!-- <iframe 
               height="320" 
               style="width: 100%; border: none"  
               src="https://codepen.io/alexborecky/embed/eYZgjGb?height=231&theme-id=dark&default-tab=html">
-            </iframe>
+            </iframe> -->
           </div> 
           <div class="video-slot" slot="youtube">
             <iframe 
@@ -72,20 +83,30 @@
                     <p>
                       Podívejme se znovu na náš kód, který budeme vkládat do administrace Shoptetu.
                     </p>
+                    <codeSnippet
+                      :bannerClass="codes.carouselClass"
+                      :imageUrl="codes.carouselImage"
+                      :bannerClassTwo="codes.carouselSecondClass"
+                      :heading="codes.carouselTypo"
+                      :title="codes.carouselTitle"
+                      :description="codes.carouselDescription"
+                      :buttonUrl="codes.carouselButton"
+                      :buttonText="codes.carouselButtonText"
+                    />
 
-                    <iframe class="codepen"
+                    <!-- <iframe class="codepen"
                       height="320" 
                       style="width: 100%; border: none"  
                       src="https://codepen.io/alexborecky/embed/eYZgjGb?height=231&theme-id=dark&default-tab=html">
-                    </iframe>
+                    </iframe> -->
 
                     <p> 
-                      V první v řadě změníme obsah za textem <span class="orange-text"> src </span> v <span class="yellow-text"><span class="yellow-text">&lt;</span>img&gt;</span> atributu a mezi uvozovkami, který reprezentuje obrázek, jenž je v pozadí banneru.
+                      V první v řadě změníme obsah za textem <span class="orange"> src </span> v <span class="yellow"><span class="yellow">&lt;</span>img&gt;</span> atributu a mezi uvozovkami, který reprezentuje obrázek, jenž je v pozadí banneru.
                     </p>
 
                     <pre slot="additionalContent" class="wrap-code">
                       <code> 
-                        <div class="wrapper green-text"> https://cdn.myshoptet.com/usr/shoptet.tomashlad.eu/user/documents/extras/opal/img/slide1.png?v5
+                        <div class="wrapper green"> https://cdn.myshoptet.com/usr/shoptet.tomashlad.eu/user/documents/extras/opal/img/slide1.png?v5
                         </div>
                       </code>
                     </pre>
@@ -106,12 +127,23 @@
 
                   <div slot="stepContent">
                     <p> Nahrazení textu je snažší, neboť se můžeme orientovat podle již zkopírovaného textu, konkrétně 
-                      <span class="yellow-text"> Nahradíme nadpisem banneru </span> a 
-                      <span class="yellow-text"> Nahradíme popiskem hlavního banneru </span> v attrbitutech 
-                      <span class="yellow-text"><span class="yellow-text">&lt;</span>h2&gt;</span> a 
-                      <span class="yellow-text"><span class="yellow-text">&lt;</span>p&gt;</span>.</p> 
+                      <span class="red"> Nahradíme nadpisem banneru </span> a 
+                      <span class="red"> Nahradíme popiskem hlavního banneru </span> v attrbitutech 
+                      <code>
+                        &lt;<span class="red">h2</span>>
+                      </code> a 
+                      <code>
+                        &lt;<span class="red">p</span>&gt;
+                      </code>
+                    </p> 
                     
-                    <pre slot="additionalContent"><code class="yellow-text"> <br>   <span class="yellow-text">&lt;</span><span>h2&gt;</span><span class="white-text">Nahradíme nadpisem banneru</span><span>&lt;</span>/h2&gt;<br>   <span class="yellow-text">&lt;</span><span>p&gt;</span><span class="white-text">Nahradíme popiskem hlavního banneru</span><span>&lt;</span>/p&gt;</code>
+                    <pre slot="additionalContent">
+                      <code> 
+                        <div class="wrapper">
+                          &lt;<span class="red">h2</span>&gt;<span class="white">Nahradíme nadpisem banneru</span>&lt;/<span class="red">h2</span>&gt;<br>
+                          &lt;<span class="red">p</span>&gt;<span class="white">Nahradíme popiskem hlavního banneru</span>&lt;/<span class="red">p</span>&gt;
+                        </div>
+                      </code>
                     </pre> 
 
                     <p>
@@ -129,13 +161,17 @@
 
                   <div slot="stepContent">
                     <p> Podíváme se na zoubek obsahu mezi uvozovkami 
-                      <span class="orange-text"> href </span> v atribtutu 
-                      <span class="yellow-text"><span class="yellow-text">&lt;</span>a></span>, 
+                      <code><span class="orange">href</span></code> v atribtutu <code>
+                      &lt;<span class="red">a</span>></code>
                       který reprezentuje link / adresu, kam bude tlačítko směřovat. V tuto chvíli máme na tomto místě pouze vyplněný hashtag #.
                     </p>
 
                     <pre slot="additionalContent">
-                      <code class="green-text"> <br>  href="#"</code>
+                      <code>
+                        <div class="wrapper">
+                          <span class="yellow">href</span>="<span class="green">#</span>"
+                        </div>
+                      </code>
                     </pre> 
 
                     <p>
@@ -144,11 +180,15 @@
                     
                     <p>
                       Druhá část je text, který definuje text tlačítka v banneru. V našem případě je to nyní 
-                      <span class="yellow-text">Kliknutí na odkaz</span>
+                      <span class="red">Kliknutí na odkaz</span>
                     </p>
 
                     <pre>
-                      <code class="white-text"><br>   <span class="yellow-text">&lt;</span><span class="yellow-text">a</span> <span class="orange-text">href</span>=<span class="green-text">"#"</span> <span class="orange-text">class</span>=<span class="green-text">"button"</span><span class="yellow-text">></span>Kliknutí na odkaz<span class="yellow-text"><span>&lt;</span>/a></span></code>
+                      <code>
+                        <div class="wrapper">
+                          &lt;<span class="red">a</span> <span class="yellow">href</span>="<span class="green">#</span>" <span class="yellow">class</span>="<span class="green">button</span>"><span class="white">Kliknutí na odkaz</span>&lt;/<span class="red">a</span>>
+                        </div>
+                        </code>
                     </pre>
 
                     <p>
@@ -180,7 +220,8 @@
 export default {
   async asyncData({$content}) {
     const page = await $content('home').fetch();
-    return {page}
+    const codes = await $content('codes').fetch();
+    return {page, codes}
   },
   name: 'app',
   components: {
@@ -189,7 +230,7 @@ export default {
     return {
       name1: 'sectionTitle',
       chapterFour: 'sectionTitle',
-      generatorTip: 'TIP! Vyzkoušejte náš generátor kódu pro bannery! Stačí vyplnit obsahová pole a kód máte pžipravený pro použiti.'
+      generatorTip: 'TIP! Vyzkoušejte náš generátor kódu pro bannery! Stačí vyplnit obsahová pole a kód máte pžipravený pro použiti.',
     }
   }
 }

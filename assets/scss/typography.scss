@@ -46,8 +46,8 @@ a {
 
 
 code {
-    color: #f07178;
-    font-family: 'Fira Code';
+    color: #89ddff;
+    font-family: 'Fira Code' !important;
     font-size: 14px;
     div {
         font-family: 'Fira Code';
@@ -57,33 +57,32 @@ code {
     }
 }
 
-.blue-text {
-    color: #89ddff;
+.blue {
     font-family: 'Fira Code';;
 }
-.yellow-text {
-    color: #a7925a;
+.yellow {
+    color: #ffcb6b;
     font-family: 'Fira Code';;
 }
-.green-text {
-    color: #96b38a;
+.green {
+    color: #c3e88d;
     font-family: 'Fira Code';;
 }
-.white-text {
+.white {
     color: white;
     font-family: 'Fira Code';;
 }
-.purple-text {
+.purple {
     color: #c792ea;
     font-family: 'Fira Code';;
 }
-.red-text {
+.red {
     font-family: 'Fira Code';
     color: #f07178;
 }
 
-.orange-text {
-    color: #ddca7e;
+.orange {
+    color: #fd9170;
     font-family: 'Fira Code';
 }
 

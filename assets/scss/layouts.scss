@@ -70,11 +70,11 @@
 
 pre {
     margin: 24px 0;
-    background-color: #1D1E22;
+    background-color: #2f495e;
     white-space: nowrap;
     overflow: auto;
     margin: 0;
-    border-radius: 10px;
+    border-radius: 5px;
     code {
         margin: 24px !important;
         .wrapper {
@@ -103,4 +103,19 @@ pre {
     background-color: rgba($color: lightgray, $alpha: .2);
     border-radius: 10px;
     border: 2px lightgray solid;
+}
+
+.first-layer {
+    margin: 0;
+}
+.second-layer {
+    margin: 0 24px;
+}
+
+.third-layer {
+    margin: 0 48px;
+}
+
+.fourth-layer {
+    margin: 0 72px;
 }

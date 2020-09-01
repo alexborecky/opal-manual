@@ -22,11 +22,21 @@
           >
           <!-- TOP CODEPEN -->
           <div slot="codepen">
-            <iframe class="codepen"
+            <codeSnippet
+              :bannerClass="codes.topClass"
+              :imageUrl="codes.topImage"
+              :bannerClassTwo="codes.topSecondClass"
+              :heading="codes.topTypo"
+              :title="codes.topTitle"
+              :description="codes.topDescription"
+              :buttonUrl="codes.topButton"
+              :buttonText="codes.topButtonText"
+            />
+            <!-- <iframe class="codepen"
               height="320" 
               style="width: 100%; border: none"  
               src="https://codepen.io/alexborecky/embed/xxVOyQb?height=231&theme-id=dark&default-tab=html">
-            </iframe>
+            </iframe> -->
           </div>
           <!-- STEP FOUR -->
           <div class="video-slot" slot="youtube">
@@ -71,18 +81,32 @@
                     <p>
                       Podívejme se znovu na náš kód, který budeme vkládat do administrace Shoptetu.
                     </p>
+                    <codeSnippet
+                      :bannerClass="codes.topClass"
+                      :imageUrl="codes.topImage"
+                      :bannerClassTwo="codes.topSecondClass"
+                      :heading="codes.topTypo"
+                      :title="codes.topTitle"
+                      :description="codes.topDescription"
+                      :buttonUrl="codes.topButton"
+                      :buttonText="codes.topButtonText"
+                    />
 
-                    <iframe class="codepen"
+                    <!-- <iframe class="codepen"
                       height="320" 
                       style="width: 100%; border: none"  
                       src="https://codepen.io/alexborecky/embed/xxVOyQb?height=231&theme-id=dark&default-tab=html">
-                    </iframe>
+                    </iframe> -->
 
                     <p> 
-                      V první v řadě změníme obsah za textem <span class="orange-text"> src </span> v <span class="yellow-text"><span class="yellow-text">&lt;</span>img&gt;</span> atributu a mezi uvozovkami, který reprezentuje obrázek, jenž je v pozadí banneru.
+                      V první v řadě změníme obsah za textem <span class="orange"> src </span> v <span class="yellow"><span class="yellow">&lt;</span>img&gt;</span> atributu a mezi uvozovkami, který reprezentuje obrázek, jenž je v pozadí banneru.
                     </p>
 
-                    <pre slot="additionalContent"><code class="green-text"> <br>   https://shoptet.tomashlad.eu/user/documents/extras/opal/img/banner1.png</code>
+                    <pre slot="additionalContent" class="wrap-code">
+                      <code> 
+                        <div class="wrapper green"> https://cdn.myshoptet.com/usr/shoptet.tomashlad.eu/user/documents/extras/opal/img/slide1.png?v5
+                        </div>
+                      </code>
                     </pre>
 
                     <p>
@@ -101,12 +125,23 @@
 
                   <div slot="stepContent">
                     <p> Nahrazení textu je snažší, neboť se můžeme orientovat podle již zkopírovaného textu, konkrétně 
-                      <span class="yellow-text"> Nahradíme nadpisem </span> a 
-                      <span class="yellow-text"> Nahradíme popiskem </span> v attrbitutech 
-                      <span class="yellow-text"><span class="yellow-text">&lt;</span>h3&gt;</span> a 
-                      <span class="yellow-text"><span class="yellow-text">&lt;</span>p&gt;</span>.</p> 
+                      <span class="red"> Nahradíme nadpisem banneru </span> a 
+                      <span class="red"> Nahradíme popiskem hlavního banneru </span> v attrbitutech 
+                      <code>
+                        &lt;<span class="red">h3</span>>
+                      </code> a 
+                      <code>
+                        &lt;<span class="red">p</span>&gt;
+                      </code>
+                    </p> 
                     
-                    <pre slot="additionalContent"><code class="yellow-text"> <br>   <span class="yellow-text">&lt;</span><span>h3&gt;</span><span class="white-text">Nahradíme nadpisem</span><span>&lt;</span>/h3&gt;<br>   <span class="yellow-text">&lt;</span><span>p&gt;</span><span class="white-text">Nahradíme popiskem</span><span>&lt;</span>/p&gt;</code>
+                    <pre slot="additionalContent">
+                      <code> 
+                        <div class="wrapper">
+                          &lt;<span class="red">h3</span>&gt;<span class="white">Nahradíme nadpisem banneru</span>&lt;/<span class="red">h3</span>&gt;<br>
+                          &lt;<span class="red">p</span>&gt;<span class="white">Nahradíme popiskem hlavního banneru</span>&lt;/<span class="red">p</span>&gt;
+                        </div>
+                      </code>
                     </pre> 
 
                     <p>
@@ -130,7 +165,11 @@
                     </p>
 
                     <pre slot="additionalContent">
-                      <code class="green-text"> <br>  href="#"</code>
+                      <code>
+                        <div class="wrapper">
+                          <span class="yellow">href</span>="<span class="green">#</span>"
+                        </div>
+                      </code>
                     </pre> 
 
                     <p>
@@ -143,7 +182,11 @@
                     </p>
 
                     <pre>
-                      <code class="white-text"><br>   <span class="yellow-text">&lt;</span><span class="yellow-text">a</span> <span class="orange-text">href</span>=<span class="green-text">"#"</span> <span class="orange-text">class</span>=<span class="green-text">"button"</span><span class="yellow-text">></span>Kliknutí na odkaz<span class="yellow-text"><span>&lt;</span>/a></span></code>
+                      <code>
+                        <div class="wrapper">
+                          &lt;<span class="red">a</span> <span class="yellow">href</span>="<span class="green">#</span>" <span class="yellow">class</span>="<span class="green">button</span>"><span class="white">Kliknutí na odkaz</span>&lt;/<span class="red">a</span>>
+                        </div>
+                        </code>
                     </pre>
 
                     <p>
@@ -175,7 +218,8 @@
 export default {
   async asyncData({$content}) {
     const page = await $content('home').fetch();
-    return {page}
+    const codes = await $content('codes').fetch();
+    return {page, codes}
   },
   name: 'app',
   components: {

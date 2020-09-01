@@ -31,7 +31,7 @@
                     <pre class="snippet">
                         <code>
                             <div class="wrapper">
-                                <strong> {{chapterFour.snippetOne}} </strong>
+                                <strong class="red"> {{chapterFour.snippetOne}} </strong>
                             </div>
                         </code>
                     </pre>
@@ -64,10 +64,10 @@
                   <div slot="stepContent">
                     <p>{{chapterFour.threeTextAdd}}</p>
                     <div slot="stepContent">
-                        <pre class="snippet">
+                        <pre>
                             <code>
                                 <div class="wrapper">
-                                    <strong> {{chapterFour.snippetTwo}} </strong>
+                                    <strong class="green"> {{chapterFour.snippetTwo}} </strong>
                                 </div>
                             </code>
                         </pre>
@@ -93,8 +93,8 @@
             <footerNavigation 
             :previousArticle="page.chapterThree"
             :nextArticle="page.chapterSix"
-            nextUrl="/carousel"
-            previousUrl="/images"
+            nextUrl="/generator"
+            previousUrl="/carousel"
             />
       </div>
     </div>
