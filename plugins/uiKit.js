@@ -13,6 +13,7 @@ import codeGenerator from '@/components/codeGenerator.vue'
 import tabs from '@/components/tabs.vue'
 import footerMessage from '@/components/footerMessage.vue'
 import codeSnippet from '@/components/codeSnippet.vue'
+import linkFooter from '@/components/linkFooter.vue'
 
 
 Vue.component('intro', intro)
@@ -28,3 +29,4 @@ Vue.component('textTutorial', textTutorial)
 Vue.component('tabs', tabs)
 Vue.component('footerMessage', footerMessage)
 Vue.component('codeSnippet', codeSnippet)
+Vue.component('linkFooter', linkFooter)

@@ -59,7 +59,7 @@ ul {
         margin: 8px 0;
         a {
             opacity: .6;
-            padding: 8px;
+            padding: 8px 0;
             &:hover {
                 opacity: 1;
                 color: black;
