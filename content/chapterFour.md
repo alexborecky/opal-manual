@@ -5,7 +5,7 @@ description: 'V této sekci vám poradíme, jak nastavit směrování ikon soci�
 # STEP ONE
 
 stepOne: 'Krok 1: Administrace Shoptetu'
-oneText: 'Nejdříve se podíváme do sekce administrace Shoptetu, se kteoru budeme pracovat. Tu najdeme následovně: '
+oneText: 'Nejdříve se podíváme do sekce administrace Shoptetu, se kterou budeme pracovat. Tu najdeme následovně: '
 snippetOne: 'Administrace > VZHLED A OBSAH > Šablony > Prvky'
 
 

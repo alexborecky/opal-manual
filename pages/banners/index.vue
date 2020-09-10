@@ -9,6 +9,10 @@
           :contentFour="page.chapterFour"
           :contentFive="page.chapterFive"
           :contentSix="page.chapterSix"
+          :contentSeven="page.chapterSeven"
+          :contentEight="page.chapterEight"
+          :contentNine="page.chapterNine"
+          :contentTen="page.chapterTen"
         />
       </aside>
     <div class="col2">

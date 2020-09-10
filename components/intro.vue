@@ -48,6 +48,9 @@ export default {
 .intro {
     width: 100%;
     margin-top: 80px;
+    @media only screen and (max-width: 450px) {
+        margin-top: 0px;
+    }
     h1 {
         margin-bottom: 24px;
     }

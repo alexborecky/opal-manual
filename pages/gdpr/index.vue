@@ -9,6 +9,10 @@
           :contentFour="page.chapterFour"
           :contentFive="page.chapterFive"
           :contentSix="page.chapterSix"
+          :contentSeven="page.chapterSeven"
+          :contentEight="page.chapterEight"
+          :contentNine="page.chapterNine"
+          :contentTen="page.chapterTen"
         />
       </aside>
     <div class="col2">
@@ -83,7 +87,7 @@
                     <div class="wrapper">
                         <ul>
                             <li><p>právo na přístup ke svým osobním údajům dle čl. 15 GDPR,</p></li>
-                            <p><li>právo opravu osobních údajů dle čl. 16 GDPR, popřípadě omezení zpracování dle čl. 18 GDPR.</li></p>
+                            <p><li>právo opravu osobních údajů dle čl. 16 GDPR, popřípadě omezení zpracování dle čl. 18 GDPR.</li>
                             <li><p>právo na výmaz osobních údajů dle čl. 17 GDPR.</p></li>
                             <li><p>právo vznést námitku proti zpracování dle čl. 21 GDPR a </p></li>
                             <li><p>právo na přenositelnost údajů dle čl. 20 GDPR.</p></li>
@@ -128,7 +132,7 @@ export default {
 }
 </script>
 
-<style lang="scss">
+<style lang="scss" scoped>
 
 p, h5 {
     margin-top: 32px !important;

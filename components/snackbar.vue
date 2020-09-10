@@ -4,7 +4,7 @@
             <div class="flex snack-col">
                 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" class="feather feather-alert-circle"><circle cx="12" cy="12" r="10"></circle><line x1="12" y1="8" x2="12" y2="12"></line><line x1="12" y1="16" x2="12.01" y2="16"></line></svg>
             </div>
-            <div class="clo2 flex column">
+            <div class="flex column text">
                 <h5>{{snackBarText}}</h5>
                 <nuxt-link :to="snackUrl">{{snackBarLink}}</nuxt-link> 
             </div>
@@ -29,6 +29,9 @@ export default {
     background-color: rgba($color: $blue-color, $alpha: .2);
     .snackbar-content {
         padding: 24px 0;
+        .text {
+            margin-right: 16px;
+        }
         h5 {
             color: $blue-color;
             max-width: 650px;
@@ -40,6 +43,12 @@ export default {
             color: $blue-color;
             text-decoration: underline;
             margin-top: 24px;
+        }
+        @media only screen and (max-width: 450px) {
+            // flex-flow: column;
+            .snack-col {
+                margin: 4px 8px;
+            }
         }
     }
 }

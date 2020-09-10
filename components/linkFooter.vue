@@ -35,7 +35,12 @@ export default {
         justify-content: space-between;
         align-items: flex-start;
         border-top: solid rgba($color: lightgray, $alpha: .6) 1px;
+        @media only screen and (max-width: 450px) {
+            flex-flow: column;
+            align-items: center;
+        }
         .category {
+            text-align: center;
             h5 {
                 text-transform: uppercase;
                 font-weight: 800;

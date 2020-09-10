@@ -1,5 +1,13 @@
 <template>
   <div>
+    <side-bar
+      introContent="Úvod"
+      contentOne="Velikost obrázků"
+      contentTwo="Nastavení bannerů"
+      contentThree="Nastavení carouselu"
+      contentFour="Ikony sociálních sítí"
+      contentFive="Množství zboží"
+    />
     <nuxt />
     <linkFooter/>
   </div>

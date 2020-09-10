@@ -8,6 +8,7 @@ chapterTwo: 'Nastavení bannerů'
 chapterThree: 'Nastavení carouselu'
 chapterFour: 'Ikony sociálních sítí'
 chapterFive: 'Ikony platebních metod'
+chapterSeven: 'Množství zboží'
 chapterSix: 'Genrátor kódu'
 
 # Intro 

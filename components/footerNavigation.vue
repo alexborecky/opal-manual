@@ -39,6 +39,9 @@ export default {
         display: flex;
         justify-content: center;
         align-items: center;
+        &:nth-child(2) {
+            text-align: right;
+        }
         svg {
             height: 16px;
         }
