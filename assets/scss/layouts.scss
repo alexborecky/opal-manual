@@ -27,9 +27,11 @@
     }
     @media only screen and (max-width: 450px){
         width: 320px;
+        margin-left: 0px;
     }
     @media only screen and (max-width: 350px){
         width: 280px;
+        margin-left: 0px;
     }
 }
 
@@ -128,4 +130,10 @@ pre {
 
 .fourth-layer {
     margin: 0 72px;
+}
+
+.step-no-image {
+    img {
+        display: none;
+    }
 }

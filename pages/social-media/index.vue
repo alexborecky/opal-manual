@@ -26,7 +26,7 @@
         </textTutorial>
         <additionalContent>
             <div slot="additionalContent">
-              <step class="step-one"
+              <step class="step-one step-no-image"
                 :stepTitle="chapterFour.stepOne"
                 :stepText="chapterFour.oneText"
                 stepImage=""
@@ -126,7 +126,7 @@ export default {
 }
 </script>
 
-<style lang="scss">
+<style lang="scss" scoped>
 
 .back-button {
   position: relative;
@@ -146,12 +146,6 @@ export default {
 
 .additional-image {
   margin: 24px 0 0 0 ;
-}
-
-.step-one {
-    img {
-        display: none;
-    }
 }
 
 #banners {  

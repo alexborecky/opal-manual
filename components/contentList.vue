@@ -8,7 +8,7 @@
                 <li><nuxt-link to="/banners">{{contentTwo}}</nuxt-link></li>
                 <li><nuxt-link to="/carousel">{{contentThree}}</nuxt-link></li>
                 <li><nuxt-link to="/social-media">{{contentFour}}</nuxt-link></li>
-                <!-- <li><nuxt-link to="/icons">{{contentFive}}</nuxt-link></li> -->
+                <li><nuxt-link to="/logos">Ikony platebních metod</nuxt-link></li>
                 <li><nuxt-link to="/amount">{{contentSeven}}</nuxt-link></li>
                 <br> <br> 
                 <li><nuxt-link to="/generator">{{contentSix}}<span> (beta)</span></nuxt-link></li>

@@ -28,7 +28,7 @@
               snackBarLink="Přejít na generátor"
               snackUrl=""
             />
-            <step class="step-one"
+            <step class="step-one step-no-image"
                 :stepTitle="seven.stepOne"
                 :stepText="seven.oneText"
                 stepImage=""
@@ -43,7 +43,7 @@
                     </pre>
                 </div>
               </step>
-              <step class="step-two"
+              <step class="step-two step-no-image"
                 :stepTitle="seven.stepTwo"
                 :stepText="seven.twoText"
                 stepImage=""
@@ -75,10 +75,10 @@
           </div>
         </additionalContent>
         <footerNavigation 
-          :previousArticle="page.chapterFour"
+          :previousArticle="page.chapterFive"
           :nextArticle="page.chapterSix"
           nextUrl="/generator"
-          previousUrl="/social-media"
+          previousUrl="/logos"
         />
       </div>
     </div>
@@ -104,7 +104,7 @@ export default {
 }
 </script>
 
-<style lang="scss">
+<style lang="scss" scoped>
 
 .back-button {
   position: relative;
