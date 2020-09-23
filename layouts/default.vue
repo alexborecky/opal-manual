@@ -7,6 +7,7 @@
       contentThree="Nastavení carouselu"
       contentFour="Ikony sociálních sítí"
       contentFive="Množství zboží"
+      contentSix="Loga platebních metod"
     />
     <nuxt />
     <linkFooter/>

@@ -23,13 +23,13 @@
                         <nuxt-link to="/social-media">{{contentFour}}</nuxt-link>
                       </li>
                       <li @click="isActive = !isActive">
+                        <nuxt-link to="/logos">{{contentSix}}</nuxt-link>
+                      </li>
+                      <li @click="isActive = !isActive">
                         <nuxt-link to="/amount">{{contentFive}}</nuxt-link>
                       </li>
                       <li @click="isActive = !isActive">
-                        <nuxt-link to="/contact">{{contentSix}}</nuxt-link>
-                      </li>
-                      <li @click="isActive = !isActive">
-                        <nuxt-link to="/contact">{{contentSeven}}</nuxt-link>
+                        <nuxt-link to="/">{{contentSeven}}</nuxt-link>
                       </li>
                   </ul>
               </div>

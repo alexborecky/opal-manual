@@ -43,6 +43,9 @@ export default {
             margin: 40px 0;
             background-position: center;
             background-size: cover;
+            @media only screen and (max-width: 450px) {
+                height: 240px;
+            }
         }
     }
 }
