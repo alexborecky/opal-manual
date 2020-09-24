@@ -53,7 +53,7 @@
                     <code>
                       <div class="wrapper">
                         <div class="first-layer">
-                          <span>&lt;</span><span class="red">div</span><span>></span>
+                          <span>&lt;</span><span class="red">div </span><span><span class="yellow">class</span>="<span class="green">online-platby</span>"></span>
                         </div>
                             <div class="second-layer">
                                 &lt;<span class="red">img</span> <span class="yellow">src</span>="<span class="green">{{visaImg}}</span>"> 
