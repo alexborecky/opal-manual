@@ -57,9 +57,9 @@ export default {
     scss: ['./assets/scss/*.scss']
   },
 
-  router: {
-    base: '/manualy/opal/'
-  },
+  // router: {
+  //   base: '/manualy/opal/'
+  // },
   /*
   ** Build configuration
   */

@@ -40,7 +40,7 @@ export default {
             align-items: center;
         }
         .category {
-            text-align: center;
+            text-align: left;
             h5 {
                 text-transform: uppercase;
                 font-weight: 800;

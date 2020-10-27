@@ -1,5 +1,5 @@
 <template>
-    <div class="burger-nav">
+    <div class="burger-nav side-bar">
       <div class="close" >
           <p @click="isActive = !isActive" ><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-menu"><line x1="3" y1="12" x2="21" y2="12"></line><line x1="3" y1="6" x2="21" y2="6"></line><line x1="3" y1="18" x2="21" y2="18"></line></svg></p> 
         </div>
@@ -8,25 +8,25 @@
               <div class="mobile-links">
                   <ul>
                       <li @click="isActive = !isActive">
-                        <nuxt-link to="/">{{introContent}}</nuxt-link>
+                        <nuxt-link to="/opal/">{{introContent}}</nuxt-link>
                       </li>
                       <li @click="isActive = !isActive">
-                        <nuxt-link to="/images">{{contentOne}}</nuxt-link>
+                        <nuxt-link to="/opal/images">{{contentOne}}</nuxt-link>
                       </li>
                       <li @click="isActive = !isActive">
-                        <nuxt-link to="/banners">{{contentTwo}}</nuxt-link>
+                        <nuxt-link to="/opal/banners">{{contentTwo}}</nuxt-link>
                       </li>
                       <li @click="isActive = !isActive">
-                        <nuxt-link to="/carousel">{{contentThree}}</nuxt-link>
+                        <nuxt-link to="/opal/carousel">{{contentThree}}</nuxt-link>
                       </li>
                       <li @click="isActive = !isActive">
-                        <nuxt-link to="/social-media">{{contentFour}}</nuxt-link>
+                        <nuxt-link to="/opal/social-media">{{contentFour}}</nuxt-link>
                       </li>
                       <li @click="isActive = !isActive">
-                        <nuxt-link to="/logos">{{contentSix}}</nuxt-link>
+                        <nuxt-link to="/opal/logos">{{contentSix}}</nuxt-link>
                       </li>
                       <li @click="isActive = !isActive">
-                        <nuxt-link to="/amount">{{contentFive}}</nuxt-link>
+                        <nuxt-link to="/opal/amount">{{contentFive}}</nuxt-link>
                       </li>
                       <li @click="isActive = !isActive">
                         <nuxt-link to="/">{{contentSeven}}</nuxt-link>

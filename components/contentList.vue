@@ -3,13 +3,13 @@
         <div class="content">
             <h4>Obsah</h4>
             <ul>
-                <li><nuxt-link to="/">{{introContent}}</nuxt-link></li>
-                <li><nuxt-link to="/images">{{contentOne}}</nuxt-link></li>
-                <li><nuxt-link to="/banners">{{contentTwo}}</nuxt-link></li>
-                <li><nuxt-link to="/carousel">{{contentThree}}</nuxt-link></li>
-                <li><nuxt-link to="/social-media">{{contentFour}}</nuxt-link></li>
-                <li><nuxt-link to="/logos">Ikony platebních metod</nuxt-link></li>
-                <li><nuxt-link to="/amount">{{contentSeven}}</nuxt-link></li>
+                <li><nuxt-link to="/opal/">{{introContent}}</nuxt-link></li>
+                <li><nuxt-link to="/opal/images">{{contentOne}}</nuxt-link></li>
+                <li><nuxt-link to="/opal/banners">{{contentTwo}}</nuxt-link></li>
+                <li><nuxt-link to="/opal/carousel">{{contentThree}}</nuxt-link></li>
+                <li><nuxt-link to="/opal/social-media">{{contentFour}}</nuxt-link></li>
+                <li><nuxt-link to="/opal/logos">Ikony platebních metod</nuxt-link></li>
+                <li><nuxt-link to="/opal/amount">{{contentSeven}}</nuxt-link></li>
                 <br> <br> 
                 <li><nuxt-link to="/generator">{{contentSix}}<span> (beta)</span></nuxt-link></li>
             </ul>

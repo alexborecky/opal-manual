@@ -11,8 +11,22 @@
     min-height: 100vh;
 }
 
+.row {
+    display: flex;
+    margin-top: 24px;
+}
+
 .full-width {
     width: 100%;
+}
+
+.home-container {
+    max-width: 1200px;
+    padding: 80px 0;
+    margin: 0 auto;
+    @media only screen and (max-width: 960px) {
+        max-width: 80%;
+    }
 }
 
 .container {
@@ -135,5 +149,70 @@ pre {
 .step-no-image {
     img {
         display: none;
+    }
+}
+
+.product-card {
+    margin-right: 40px;
+    .product-content {
+        display: flex;
+        flex-flow: column;
+        max-width: 240px;
+        .title {
+            align-items: center;
+        }        
+        h5 {
+            margin: 8px 0 4px 0;
+        }
+    }
+    @media only screen and (max-width: 960px) {
+        margin-bottom: 40px;
+    }
+    &:hover {
+        svg {
+            rect {
+                stroke: $main-blue;
+                stroke-width: 2;
+            }
+            path {
+                stroke: $main-blue;
+                stroke-opacity: 1;
+            }
+        }
+        h5 {
+            color: $main-blue;
+        }
+        .small {
+            font-weight: 500;
+            color: $web-black;
+        }
+    }
+}
+
+.preparing {
+    pointer-events: none;
+    h5, .small, .product-image {
+        opacity: 0.4;
+    }
+}
+
+.dashboard {
+    width: 100%;
+    .dashboard-section {
+        margin-top: 80px;
+        width: 100%;
+        @media only screen and (max-width: 450px) {
+            margin-top: 40px;
+        }
+        .row {
+            flex-wrap: wrap;
+            width: 100%;
+        }
+        .title {
+            align-items: center;
+            svg {
+                margin-right: 8px;
+            }
+        }  
     }
 }

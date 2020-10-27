@@ -15,6 +15,9 @@ import footerMessage from '@/components/footerMessage.vue'
 import codeSnippet from '@/components/codeSnippet.vue'
 import linkFooter from '@/components/linkFooter.vue'
 import sideBar from '@/components/sideBar.vue'
+import templateCard from '@/components/templateCard.vue'
+import addonCard from '@/components/addonCard.vue'
+import badge from '@/components/badge.vue'
 
 
 Vue.component('intro', intro)
@@ -32,3 +35,6 @@ Vue.component('footerMessage', footerMessage)
 Vue.component('codeSnippet', codeSnippet)
 Vue.component('linkFooter', linkFooter)
 Vue.component('sideBar', sideBar)
+Vue.component('templateCard', templateCard)
+Vue.component('addonCard', addonCard)
+Vue.component('badge', badge)

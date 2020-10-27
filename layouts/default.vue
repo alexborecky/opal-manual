@@ -1,6 +1,6 @@
 <template>
   <div>
-    <side-bar
+    <side-bar v-if="this.$route.path !== '/'"
       introContent="Úvod"
       contentOne="Velikost obrázků"
       contentTwo="Nastavení bannerů"
@@ -10,11 +10,11 @@
       contentSix="Loga platebních metod"
     />
     <nuxt />
-    <linkFooter/>
+    <linkFooter v-if="this.$route.path !== '/'" />
   </div>
 </template>
 
-<style>
+<style lang="scss">
 html {
   font-family: 'Source Sans Pro', -apple-system, BlinkMacSystemFont, 'Segoe UI',
     Roboto, 'Helvetica Neue', Arial, sans-serif;
@@ -33,5 +33,7 @@ html {
   box-sizing: border-box;
   margin: 0;
 }
+
+
 
 </style>

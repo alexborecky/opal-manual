@@ -13,6 +13,9 @@ h1 {
 
 h2 {
     font-size: 48px;
+    @media only screen and (max-width: 450px) {
+        font-size: 32px;
+    }
 }
 
 h3 {
@@ -21,6 +24,7 @@ h3 {
 
 h4 {
     font-size: 24px;
+    font-weight: 600;
 }
 
 h5 {
@@ -29,8 +33,13 @@ h5 {
 }
 
 p {
-    font-size: 15px;
+    font-size: 16px;
     max-width: 650px;
+}
+
+.small {
+    font-size: 12px;
+    opacity: .64;
 }
 
 a {
