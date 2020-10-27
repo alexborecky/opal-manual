@@ -32,7 +32,7 @@
         <footerNavigation 
           :previousArticle="page.introChapter"
           :nextArticle="page.chapterOne"
-          nextUrl="/images"
+          nextUrl="/opal/images"
           previousUrl=""
         />
       </div>

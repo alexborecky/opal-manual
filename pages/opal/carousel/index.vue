@@ -206,13 +206,13 @@
           <snackBar class="success"
             :snackBarText="generatorTip"
             snackBarLink="Přejít na generátor"
-            snackUrl="/generator"
+            snackUrl="/opal/generator"
           />
             <footerNavigation 
             :previousArticle="page.chapterTwo"
             :nextArticle="page.chapterFour"
-            nextUrl="/social-media"
-            previousUrl="/banners"
+            nextUrl="/opal/social-media"
+            previousUrl="/opal/banners"
             />
       </div>
     </div>

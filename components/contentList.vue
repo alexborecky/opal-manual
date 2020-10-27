@@ -11,7 +11,7 @@
                 <li><nuxt-link to="/opal/logos">Ikony platebních metod</nuxt-link></li>
                 <li><nuxt-link to="/opal/amount">{{contentSeven}}</nuxt-link></li>
                 <br> <br> 
-                <li><nuxt-link to="/generator">{{contentSix}}<span> (beta)</span></nuxt-link></li>
+                <li><nuxt-link to="/opal/generator">{{contentSix}}<span> (beta)</span></nuxt-link></li>
             </ul>
         </div>
     </div>

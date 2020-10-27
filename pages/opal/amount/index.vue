@@ -77,8 +77,8 @@
         <footerNavigation 
           :previousArticle="page.chapterFive"
           :nextArticle="page.chapterSix"
-          nextUrl="/generator"
-          previousUrl="/logos"
+          nextUrl="/opal/generator"
+          previousUrl="/opal/logos"
         />
       </div>
     </div>

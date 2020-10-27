@@ -72,8 +72,8 @@
         <footerNavigation 
           :previousArticle="page.chapterThree"
           :nextArticle="page.introChapter"
-          nextUrl="/"
-          previousUrl="/carousel"
+          nextUrl="/opal"
+          previousUrl="/opal/carousel"
         />
       </div>
     </div>

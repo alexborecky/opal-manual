@@ -13,7 +13,7 @@
             </div>
             <div class="flex column category">
                 <h5>Soukromí</h5>
-                <nuxt-link to="/gdpr" target="_blank">GDPR</nuxt-link> 
+                <nuxt-link to="/opal/gdpr" target="_blank">GDPR</nuxt-link> 
             </div>
         </div>
     </div>

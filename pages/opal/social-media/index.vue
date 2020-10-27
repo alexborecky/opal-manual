@@ -92,13 +92,13 @@
           <snackBar class="warning no-link"
             :snackBarText="chapterFour.snackTwo"
             snackBarLink="Přejít na generátor"
-            snackUrl="/generator"
+            snackUrl="/opal/generator"
           />
             <footerNavigation 
             :previousArticle="page.chapterThree"
             :nextArticle="page.chapterSix"
-            nextUrl="/generator"
-            previousUrl="/carousel"
+            nextUrl="/opal/generator"
+            previousUrl="/opal/carousel"
             />
       </div>
     </div>

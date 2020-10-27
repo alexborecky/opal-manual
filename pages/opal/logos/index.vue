@@ -82,8 +82,8 @@
         <footerNavigation 
           :previousArticle="page.chapterFour"
           :nextArticle="page.chapterSeven"
-          nextUrl="/amount"
-          previousUrl="/social-media"
+          nextUrl="/opal/amount"
+          previousUrl="/opal/social-media"
         />
       </div>
     </div>

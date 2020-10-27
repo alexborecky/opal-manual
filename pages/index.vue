@@ -25,12 +25,12 @@
             <addonCard class="see-badge preparing"
               addonTitle="Premium Carousel"
               addonDes="Interaktivní vylepšení všedního Shoptet Carouselu"
-              addonLink="/premiumCarousel"
+              addonLink="/"
             />
             <templateCard class="see-badge preparing"
               tempTitle="Celestin"
               tempDes="Interaktivní vylepšení všedního Shoptet Carouselu"
-              tempLink="/celestin"
+              tempLink="/"
             />
           </div>
         </div>
@@ -50,7 +50,7 @@
             <templateCard class="see-badge preparing"
               tempTitle="Celestin"
               tempDes="Interaktivní vylepšení všedního Shoptet Carouselu"
-              tempLink="/celestin"
+              tempLink="/"
             />
           </div>
         </div>
@@ -65,7 +65,7 @@
             <addonCard class="see-badge preparing"
               addonTitle="Premium Carousel"
               addonDes="Interaktivní vylepšení všedního Shoptet Carouselu"
-              addonLink="/premiumCarousel"
+              addonLink="/"
             />
           </div>
         </div>

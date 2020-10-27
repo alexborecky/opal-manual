@@ -204,13 +204,13 @@
           <snackBar class="success"
             :snackBarText="generatorTip"
             snackBarLink="Přejít na generátor"
-            snackUrl="/generator"
+            snackUrl="/opal/generator"
           />
             <footerNavigation 
             :previousArticle="page.chapterOne"
             :nextArticle="page.chapterThree"
-            nextUrl="/carousel"
-            previousUrl="/images"
+            nextUrl="/opal/carousel"
+            previousUrl="/opal/images"
             />
       </div>
     </div>

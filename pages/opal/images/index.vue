@@ -36,8 +36,8 @@
         <footerNavigation 
           :previousArticle="page.introChapter"
           :nextArticle="page.chapterTwo"
-          nextUrl="/banners"
-          previousUrl="/"
+          nextUrl="/opal/banners"
+          previousUrl="/opal/"
         />
       </div>
     </div>
